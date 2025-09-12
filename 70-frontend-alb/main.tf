@@ -12,9 +12,9 @@ module "ingress_alb" {
   
   tags = merge(
     local.local_tags,
-    {
-        Name = "${var.project}-${var.environment}-${var.ingress_alb_sg_name}"
-    }
+    # {
+    #     Name = "${var.project}-${var.environment}-${var.ingress_alb_sg_name}"
+    # }
   )
 }
 
